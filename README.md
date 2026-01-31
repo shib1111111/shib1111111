@@ -110,9 +110,5 @@ I specialize in Python, Java, and Machine Learning, with hands-on expertise in D
 
 ### 📊 GitHub Intelligence
 <div align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=shib1111111&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&count_private=true" alt="Shib's Stats" height="170" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=shib1111111&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Top Languages" height="170" />
-</div>
-<div align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=shib1111111&theme=tokyonight&hide_border=true&background=0D1117" alt="Streak" />
 </div>

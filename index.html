@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Shib Kumar Saraf - AI Engineer, Generative AI Architect, and Researcher.">
+    <title>Shib Kumar Saraf | AI Architect & Engineer</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            /* Light Mode (Lavender/White) */
+            --bg-body: #ffffff;
+            --bg-secondary: #f8f7ff; /* Very pale lavender */
+            --text-main: #2d2d2d;
+            --text-muted: #666666;
+            --primary-color: #7b68ee; /* Medium Slate Blue */
+            --primary-hover: #6a5acd;
+            --accent-lavender: #e6e6fa;
+            --card-bg: #ffffff;
+            --border-color: #e0e0e0;
+            --shadow: 0 10px 30px rgba(123, 104, 238, 0.1);
+        }
+
+        [data-theme="dark"] {
+            /* Dark Mode */
+            --bg-body: #2c2c2c; /* Deep dark purple/black */
+            --bg-secondary: #606060;
+            --text-main: #f0f0f0;
+            --text-muted: #f9f1f1;
+            --primary-color: #a78bfa; /* Lighter purple for dark mode */
+            --primary-hover: #0d0c10;
+            --accent-lavender: #d0cfd9;
+            --card-bg: #aeadb8;
+            --border-color: #282552;
+            --shadow: 0 10px 30px rgba(221, 212, 212, 0.4);
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        h1, h2, h3, h4, h5, h6, .navbar-brand {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: rgba(var(--bg-body), 0.9);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 0;
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--primary-color) !important;
+        }
+
+        .nav-link {
+            color: var(--text-main) !important;
+            font-weight: 500;
+            margin: 0 10px;
+            position: relative;
+        }
+
+        .nav-link:hover {
+            color: var(--primary-color) !important;
+        }
+
+        /* Buttons */
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+            border-color: var(--primary-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(123, 104, 238, 0.3);
+        }
+
+        .btn-outline-primary {
+            color: var(--primary-color);
+            border-color: var(--primary-color);
+            border-radius: 50px;
+        }
+
+        .btn-outline-primary:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            padding: 100px 0;
+            background: radial-gradient(circle at top right, var(--accent-lavender) 0%, transparent 40%);
+        }
+
+        .profile-img {
+            width: 280px;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid var(--primary-color);
+            padding: 5px;
+            background: var(--bg-body);
+            box-shadow: var(--shadow);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+
+        /* Cards */
+        .custom-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2rem;
+            height: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .custom-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+            border-color: var(--primary-color);
+        }
+
+        /* Experience Timeline */
+        .timeline {
+            border-left: 3px solid var(--accent-lavender);
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 50px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            width: 16px;
+            height: 16px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            position: absolute;
+            left: -39px;
+            top: 5px;
+            border: 3px solid var(--bg-body);
+        }
+
+        /* Badges */
+        .skill-badge {
+            background-color: var(--accent-lavender);
+            color: var(--primary-color);
+            padding: 8px 16px;
+            border-radius: 8px;
+            margin: 0 8px 12px 0;
+            display: inline-block;
+            font-weight: 500;
+            font-size: 0.9rem;
+            border: 1px solid transparent;
+        }
+        
+        [data-theme="dark"] .skill-badge {
+             background-color: rgba(167, 139, 250, 0.15);
+        }
+
+        /* Section Headings */
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 3rem;
+            font-weight: 700;
+            color: var(--text-main);
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 4px;
+            background: var(--primary-color);
+            bottom: -10px;
+            left: 0;
+            border-radius: 2px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--bg-secondary);
+            padding: 3rem 0;
+            border-top: 1px solid var(--border-color);
+        }
+
+        /* Mode Toggle */
+        .theme-toggle {
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--accent-lavender);
+            color: var(--primary-color);
+            border: none;
+            transition: all 0.3s;
+        }
+
+        .bg-subtle {
+            background-color: var(--bg-secondary);
+        }
+        
+        a { text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-code me-2"></i>SKS.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon" style="filter: invert(0.5);"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <button class="theme-toggle" id="themeToggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center flex-column-reverse flex-lg-row">
+                <div class="col-lg-7 mt-5 mt-lg-0">
+                    <span class="text-uppercase fw-bold text-primary mb-2 d-block">Hello, I am</span>
+                    <h1 class="display-3 fw-bold mb-3" style="color: var(--text-main);">Shib Kumar Saraf</h1>
+                    <h2 class="h3 mb-4" style="color: var(--text-muted);">AI Engineer • Generative AI Architect</h2>
+                    <p class="lead mb-5" style="color: var(--text-muted); max-width: 600px;">
+                        AI Engineer with 2+ years of experience delivering production-grade data-driven AI/ML solutions in <strong>Agentic Workflows</strong>, <strong>Enterprise RAG Architectures</strong>, and <strong>Computer Vision</strong> to drive automation, insights, and impact at business scale.
+                    </p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="https://github.com/shib1111111/shib1111111/raw/main/assets/Shib_Kumar_Saraf_Resume.pdf" class="btn btn-primary btn-lg shadow-sm">
+                            <i class="fas fa-download me-2"></i>Download Resume
+                        </a>
+                        <a href="mailto:shibkumarsaraf05@gmail.com" class="btn btn-outline-primary btn-lg">
+                            <i class="fas fa-envelope me-2"></i>Contact Me
+                        </a>
+                        <div class="d-flex align-items-center gap-3 ms-lg-3">
+                            <a href="https://github.com/shib1111111" class="text-decoration-none" style="color: var(--text-main); font-size: 1.5rem;"><i class="fab fa-github"></i></a>
+                            <a href="https://linkedin.com/in/shibkumarsaraf" class="text-decoration-none" style="color: var(--text-main); font-size: 1.5rem;"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://shibkumar.dev" class="text-decoration-none" style="color: var(--text-main); font-size: 1.5rem;"><i class="fas fa-globe"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <img src="https://github.com/shib1111111.png" alt="Shib Kumar Saraf" class="profile-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-5 bg-subtle">
+        <div class="container">
+            <h2 class="section-title">Technical Arsenal</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="custom-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-brain fa-2x text-primary me-3"></i>
+                            <h4 class="mb-0">Generative AI & NLP</h4>
+                        </div>
+                        <p class="text-muted small mb-3">Transformers (BERT, GPT), RAG, LangChain, Agentic AI, Prompt Engineering, Fine-Tuning</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="custom-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-eye fa-2x text-primary me-3"></i>
+                            <h4 class="mb-0">Computer Vision</h4>
+                        </div>
+                        <p class="text-muted small mb-3">OpenCV, Deep Learning, Image Segmentation, Feature Extraction, Video Analysis</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="custom-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-server fa-2x text-primary me-3"></i>
+                            <h4 class="mb-0">Backend & API</h4>
+                        </div>
+                        <p class="text-muted small mb-3">Python, FastAPI, Flask, REST APIs, Microservices, Asynchronous Processing</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="custom-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-database fa-2x text-primary me-3"></i>
+                            <h4 class="mb-0">Data Engineering</h4>
+                        </div>
+                        <p class="text-muted small mb-3">PySpark, Pandas, SQL, BigQuery, Elasticsearch, Vector DBs, ETL Pipelines</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="custom-card">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-cloud fa-2x text-primary me-3"></i>
+                            <h4 class="mb-0">DevOps & Cloud</h4>
+                        </div>
+                        <p class="text-muted small mb-3">Docker, Jenkins, Kubernetes, AWS, GCP, Linux, CI/CD</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="row">
+                <div class="col-lg-10">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <span class="badge bg-primary mb-2">Oct 2025 – Present</span>
+                            <h3 class="h4 fw-bold">Senior Executive (Business Analyst)</h3>
+                            <h4 class="h6 text-primary">EXL Service</h4>
+                            <p class="text-muted mt-2">
+                                Conduct actuarial factor analysis for <strong>CVS Health (Aetna)</strong>. 
+                                Engineered churn analytics models improving customer retention from 49% to 60% and delivering actionable insights to stakeholders.
+                            </p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span class="badge bg-secondary text-dark mb-2">Jul 2024 – Oct 2025</span>
+                            <h3 class="h4 fw-bold">Project Associate (Lead AI Engineer)</h3>
+                            <h4 class="h6 text-primary">C-DAC, Chennai</h4>
+                            <p class="text-muted mt-2">
+                                Architected <strong>ChatDB</strong> and <strong>FileQAExpert</strong>, serving 10,000+ monthly queries via RAG pipelines.
+                                Deployed real-time anomaly detection for government exams (improving efficiency by 40%) and automated financial workflows.
+                            </p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span class="badge bg-secondary text-dark mb-2">Jan 2024 – Jun 2024</span>
+                            <h3 class="h4 fw-bold">Big Data & Analytics Intern</h3>
+                            <h4 class="h6 text-primary">Ministry of Electronics & IT (Govt. of India)</h4>
+                            <p class="text-muted mt-2">
+                                Developed <strong>Social Sentinel</strong>, a real-time NLP system for monitoring and classifying offensive content on Telegram. 
+                                Contributed to IEEE publications through applied experimentation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-5 bg-subtle">
+        <div class="container">
+            <h2 class="section-title">Key Projects</h2>
+            <div class="row g-4">
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="custom-card d-flex flex-column">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h3 class="h5 fw-bold mb-0">Pucho - A Local Multilingual Chatbot</h3>
+                            <i class="fas fa-comments text-primary fa-lg"></i>
+                        </div>
+                        <p class="text-muted small flex-grow-1">
+                            A robust local LLM server with a modern chat UI. Features automatic Hugging Face model downloading, VLLM backend integration, and "thinking process" visualization.
+                        </p>
+                        <div class="mt-3">
+                            <span class="skill-badge">FastAPI</span>
+                            <span class="skill-badge">Web UI</span>
+                            <span class="skill-badge">VLLM</span>
+                            <span class="skill-badge">Chatbot</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="custom-card d-flex flex-column">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h3 class="h5 fw-bold mb-0">Secure Exam Analytics</h3>
+                            <i class="fas fa-shield-alt text-primary fa-lg"></i>
+                        </div>
+                        <p class="text-muted small flex-grow-1">
+                            An AI-powered product for C-DAC providing real-time vigilance and video analysis to identify anomalies and ensure integrity in public exams.
+                        </p>
+                        <div class="mt-3">
+                            <span class="skill-badge">GovTech</span>
+                            <span class="skill-badge">AI Safety</span>
+                            <span class="skill-badge">ELK</span>
+                            <span class="skill-badge">ETL</span>
+                            <span class="skill-badge">Python</span>
+                        </div>
+                        <a href="https://www.cdac.in/index.aspx?id=product_details&productId=AI-poweredSecureExamAnalytics" target="_blank" class="btn btn-sm btn-outline-primary mt-3 w-100">View Product</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="custom-card d-flex flex-column">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h3 class="h5 fw-bold mb-0">QueryCortex</h3>
+                            <i class="fas fa-network-wired text-primary fa-lg"></i>
+                        </div>
+                        <p class="text-muted small flex-grow-1">
+                            Agentic AI Reasoning Platform routing intelligent queries between SQL databases and Vector Stores for grounded RAG responses.
+                        </p>
+                        <div class="mt-3">
+                            <span class="skill-badge">Agentic AI</span>
+                            <span class="skill-badge">RAG</span>
+                            <span class="skill-badge">LangChain</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6">
+                    <div class="custom-card d-flex flex-column">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h3 class="h5 fw-bold mb-0">MindMetrics</h3>
+                            <i class="fas fa-heartbeat text-primary fa-lg"></i>
+                        </div>
+                        <p class="text-muted small">
+                            LLM-driven NLP pipelines for sentiment modeling and thematic clustering to identify latent behavioral insights from social streams for mental health detection.
+                        </p>
+                        <div class="mt-2">
+                            <span class="skill-badge">NLP</span>
+                            <span class="skill-badge">Sentiment Analysis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6">
+                    <div class="custom-card d-flex flex-column">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h3 class="h5 fw-bold mb-0">SereneSounds</h3>
+                            <i class="fas fa-music text-primary fa-lg"></i>
+                        </div>
+                        <p class="text-muted small">
+                            Hybrid recommendation system using lyrical semantics and audio feature embeddings, powered by Collaborative Filtering and Graph-based similarity modeling.
+                        </p>
+                        <div class="mt-2">
+                            <span class="skill-badge">Graph ML</span>
+                            <span class="skill-badge">Recommender Systems</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="research" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Research & Publications</h2>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="list-group shadow-sm rounded-4 overflow-hidden">
+                        <div class="list-group-item p-4 border-start-0 border-end-0 border-top-0" style="background-color: var(--card-bg); border-color: var(--border-color);">
+                            <div class="d-flex w-100 justify-content-between align-items-center flex-wrap">
+                                <h5 class="mb-1 fw-bold" style="color: var(--text-main);">Real-Time Vigilance: Advanced Video Analysis for Violence Detection</h5>
+                                <span class="badge bg-warning text-dark"><i class="fas fa-trophy me-1"></i>Best Paper Award (IEEE ICRITO 2025)</span>
+                            </div>
+                            <p class="mb-2 mt-2 text-muted">Built a real-time computer vision pipeline leveraging deep learning models for automated violence detection.</p>
+                            <a href="https://doi.org/10.1109/ICRITO66076.2025.11241501" target="_blank" class="text-primary text-decoration-none small fw-bold">Read on IEEE <i class="fas fa-external-link-alt ms-1"></i></a>
+                        </div>
+                        
+                        <div class="list-group-item p-4 border-start-0 border-end-0" style="background-color: var(--card-bg); border-color: var(--border-color);">
+                            <div class="d-flex w-100 justify-content-between align-items-center flex-wrap">
+                                <h5 class="mb-1 fw-bold" style="color: var(--text-main);">Hybrid QLSTM Framework for Time-Series Forecasting</h5>
+                                <span class="badge bg-primary">IEEE ICIMIA 2025</span>
+                            </div>
+                            <p class="mb-2 mt-2 text-muted">Designed a hybrid Quantum-inspired LSTM architecture to improve forecasting accuracy in financial markets.</p>
+                            <a href="https://doi.org/10.1109/ICIMIA67127.2025.11200988" target="_blank" class="text-primary text-decoration-none small fw-bold">Read on IEEE <i class="fas fa-external-link-alt ms-1"></i></a>
+                        </div>
+
+                         <div class="list-group-item p-4 border-0" style="background-color: var(--card-bg);">
+                            <div class="d-flex w-100 justify-content-between align-items-center flex-wrap">
+                                <h5 class="mb-1 fw-bold" style="color: var(--text-main);">Multifaceted Feature Extraction for Mortality Risk Prediction</h5>
+                                <span class="badge bg-primary">IEEE ICSTSDG 2024</span>
+                            </div>
+                            <p class="mb-2 mt-2 text-muted">Developed an ML-driven clinical risk prediction framework using advanced feature engineering.</p>
+                            <a href="https://doi.org/10.1109/ICSTSDG61998.2024.11026232" target="_blank" class="text-primary text-decoration-none small fw-bold">Read on IEEE <i class="fas fa-external-link-alt ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-subtle">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <h3 class="h4 fw-bold mb-4" style="color: var(--text-main);"><i class="fas fa-graduation-cap text-primary me-2"></i> Education</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-4">
+                            <h5 class="fw-bold mb-1">Master of Computer Applications (MCA)</h5>
+                            <p class="text-muted mb-0">Pondicherry University | <strong>CGPA: 9.35/10</strong> <span class="badge bg-success ms-2">Top 3 Rank</span></p>
+                        </li>
+                        <li class="mb-4">
+                            <h5 class="fw-bold mb-1">Diploma in Data Science</h5>
+                            <p class="text-muted mb-0">IIT Madras | <strong>CGPA: 8.8/10</strong></p>
+                        </li>
+                        <li>
+                            <h5 class="fw-bold mb-1">B.Sc. Physics (Honours)</h5>
+                            <p class="text-muted mb-0">Vidyasagar University | <strong>CGPA: 9.08/10</strong></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="h4 fw-bold mb-4" style="color: var(--text-main);"><i class="fas fa-certificate text-primary me-2"></i> Certifications</h3>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="skill-badge">Google Digital Leader</span>
+                        <span class="skill-badge">AI for Economics (IIT KGP)</span>
+                        <span class="skill-badge">Deep Learning for CV (IIT Hyd)</span>
+                        <span class="skill-badge">Data Science & ML (NIELIT)</span>
+                        <span class="skill-badge">MongoDB University</span>
+                    </div>
+                    
+                    <h3 class="h4 fw-bold mb-3 mt-4" style="color: var(--text-main);"><i class="fas fa-award text-primary me-2"></i> Honors</h3>
+                     <ul class="list-unstyled text-muted">
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i><strong>Best Project Award:</strong> IIT Madras (Modern App Dev)</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i><strong>Scholarship:</strong> Swami Vivekananda Merit-cum-Means (Govt. of WB)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <h4 class="h5 fw-bold mb-3" style="color: var(--text-main);">Shib Kumar Saraf</h4>
+            <p class="text-muted mb-4">"Engineering Intelligence. Deploying Impact."</p>
+            
+            <div class="d-flex justify-content-center gap-4 mb-5">
+                <a href="https://github.com/shib1111111" class="text-muted fs-4 hover-primary"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/shibkumarsaraf" class="text-muted fs-4 hover-primary"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:shibkumarsaraf05@gmail.com" class="text-muted fs-4 hover-primary"><i class="fas fa-envelope"></i></a>
+                <a href="https://orcid.org/0009-0005-2533-6066" class="text-muted fs-4 hover-primary"><i class="fab fa-orcid"></i></a>
+            </div>
+
+            <p class="small text-muted mt-4 mb-0">© 2026 Shib Kumar Saraf. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const icon = themeToggle.querySelector('i');
+        const html = document.documentElement;
+
+        // Check local storage or system preference
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        html.setAttribute('data-theme', savedTheme);
+        updateIcon(savedTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateIcon(newTheme);
+        });
+
+        function updateIcon(theme) {
+            if (theme === 'dark') {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            }
+        }
+    </script>
+</body>
+</html>

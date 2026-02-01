@@ -23,7 +23,7 @@
 
 </div>
 
----
+
 
 ## 🚀 Professional Summary
 
@@ -31,19 +31,19 @@ I am an **AI Engineer** and **Senior Business Analyst** with **2.5+ years of exp
 
 Currently, I drive data-driven strategies at **EXL Service** and previously led AI engineering initiatives at **C-DAC**, serving over 10,000 users.
 
----
+
 
 ## 🛠 Technical Arsenal
 
 | Domain | Technologies |
-| :--- | :--- |
+| : | : |
 | **Generative AI & NLP** | Transformers (BERT, GPT), RAG, LangChain, LlamaIndex, Agentic AI, Prompt Engineering |
 | **Computer Vision** | OpenCV, YOLO, CNNs, Image Segmentation, DeepFeature Extraction |
 | **Backend & API** | Python, FastAPI, Flask, REST Architectures, Microservices, JWT Auth |
 | **Data Engineering** | PySpark, Pandas, NumPy, SQL, Elasticsearch, MongoDB, Vector Databases |
 | **DevOps & Cloud** | Docker, Kubernetes, Jenkins, AWS, GCP, Linux (Ubuntu/Debian) |
 
----
+
 
 ## 💼 Professional Experience
 
@@ -64,7 +64,7 @@ Currently, I drive data-driven strategies at **EXL Service** and previously led 
 * **Social Sentinel:** Developed a real-time NLP system for detecting offensive content on social platforms.
 * **Research:** Contributed to IEEE publications through applied experimentation with transformer-based classification.
 
----
+
 
 ## 🔬 Research & Publications
 
@@ -83,7 +83,7 @@ Currently, I drive data-driven strategies at **EXL Service** and previously led 
 * [DOI: 10.1109/ICSTSDG61998.2024.11026232](https://doi.org/10.1109/ICSTSDG61998.2024.11026232)
 * *Application:* Pediatric ICU risk assessment using multi-source data fusion.
 
----
+
 
 ## 💻 Key Projects
 
@@ -100,7 +100,7 @@ Currently, I drive data-driven strategies at **EXL Service** and previously led 
 * **Algorithms:** Collaborative Filtering, ALS, and Graph-based similarity modeling.
 * **Innovation:** Hybrid recommendation system using lyrical semantics and audio feature embeddings.
 
----
+
 
 ## 🎓 Education
 
@@ -108,7 +108,7 @@ Currently, I drive data-driven strategies at **EXL Service** and previously led 
 * **Diploma in Data Science** | IIT Madras | **CGPA: 8.8/10**
 * **B.Sc. Physics (Honours)** | Vidyasagar University | **CGPA: 9.08/10**
 
----
+
 
 <div align="center">
   <p><i>"Engineering Intelligence. Deploying Impact."</i></p>

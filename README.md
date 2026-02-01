@@ -16,6 +16,9 @@
 <a href="https://orcid.org/0009-0005-2533-6066">
   <img src="https://img.shields.io/badge/ORCID-Research-A6CE39?style=for-the-badge&logo=orcid&logoColor=white" />
 </a>
+<a href="https://github.com/shib1111111/shib1111111/raw/main/assets/Shib_Kumar_Saraf_Resume.pdf">
+  <img src="https://img.shields.io/badge/Resume-Download-2e2e2e?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" />
+</a>
 
 <br/><br/>
 
@@ -27,7 +30,7 @@
 
 ## 🚀 Professional Summary
 
-I am an **AI Engineer** and **Senior Business Analyst** with **2.5+ years of experience** delivering production-scale ML systems. I specialize in bridging the gap between research innovation and real-world deployment, with a focus on **Agentic Workflows**, **RAG Architectures**, and **Computer Vision**.
+I am an **AI Engineer** and **Senior Business Analyst** with **2.5+ years of experience** delivering production-scale AI/ML systems. I specialize in bridging the gap between research innovation and real-world deployment, with a focus on **Gen AI**, **Agentic Workflows**, **RAG Architectures**, and **Computer Vision**.
 
 Currently, I drive data-driven strategies at **EXL Service** and previously led AI engineering initiatives at **C-DAC**, serving over 10,000 users.
 
@@ -35,13 +38,28 @@ Currently, I drive data-driven strategies at **EXL Service** and previously led 
 
 ## 🛠 Technical Arsenal
 
-| Domain | Technologies |
-| : | : |
-| **Generative AI & NLP** | Transformers (BERT, GPT), RAG, LangChain, LlamaIndex, Agentic AI, Prompt Engineering |
-| **Computer Vision** | OpenCV, YOLO, CNNs, Image Segmentation, DeepFeature Extraction |
-| **Backend & API** | Python, FastAPI, Flask, REST Architectures, Microservices, JWT Auth |
-| **Data Engineering** | PySpark, Pandas, NumPy, SQL, Elasticsearch, MongoDB, Vector Databases |
-| **DevOps & Cloud** | Docker, Kubernetes, Jenkins, AWS, GCP, Linux (Ubuntu/Debian) |
+<table>
+  <tr>
+    <td width="25%"><b>Generative AI & NLP</b></td>
+    <td>Transformers (BERT, GPT), RAG, LangChain, Agentic AI, Prompt Engineering, Model Fine-Tuning</td>
+  </tr>
+  <tr>
+    <td width="25%"><b>Computer Vision</b></td>
+    <td>OpenCV, Deep Learning, Image Segmentation, Feature Extraction, Video Analysis</td>
+  </tr>
+  <tr>
+    <td width="25%"><b>Backend & API</b></td>
+    <td>Python, FastAPI, Flask, REST APIs, Microservices, Asynchronous Processing</td>
+  </tr>
+  <tr>
+    <td width="25%"><b>Data Engineering</b></td>
+    <td>PySpark, Pandas, SQL, BigQuery, Elasticsearch, Vector Databases, ETL Pipelines</td>
+  </tr>
+  <tr>
+    <td width="25%"><b>DevOps & Cloud</b></td>
+    <td>Docker, Jenkins, Kubernetes, AWS, GCP, Linux (Ubuntu/Debian), CI/CD</td>
+  </tr>
+</table>
 
 
 
@@ -49,41 +67,70 @@ Currently, I drive data-driven strategies at **EXL Service** and previously led 
 
 ### **Senior Executive (Business Analyst) | EXL Service**
 *Oct 2025 – Present*
-* **Impact Analytics:** Conducting actuarial factor analysis for **CVS Health (Aetna)**, driving data-driven pricing strategies.
-* **Retention Strategy:** Engineered churn analytics models that contributed to improving customer retention from **49% to 60%**.
+* **Impact Analytics:** Conducting actuarial factor analysis for **CVS Health (Aetna)** insurance products to support pricing strategies.
+* **Retention Strategy:** Engineered churn analytics models that improved customer retention from **49% to 60%**.
 * **Stakeholder Enablement:** Delivering actionable insights to plan sponsors to optimize insurance product performance.
 
 ### **Project Associate (Lead AI Engineer) | C-DAC, Chennai**
 *Jul 2024 – Oct 2025*
-* **Scalable Chatbots:** Architected **ChatDB** and **FileQAExpert**, serving **10,000+ monthly users** via Web, Telegram, and WhatsApp using RAG pipelines.
-* **Anomaly Detection:** Deployed real-time monitoring systems for high-stakes government exams, improving efficiency by **40%**.
+* **Scalable Chatbots:** Architected **ChatDB** and **FileQAExpert**, serving **10,000+ monthly queries** via Web, Telegram, and WhatsApp using RAG pipelines.
+* **Anomaly Detection:** Deployed real-time monitoring systems for government exams, improving efficiency by **40%**.
 * **Process Automation:** Reduced manual oversight by **60%** through automated financial workflow applications.
 
 ### **Big Data & Analytics Intern | Ministry of Electronics & IT (Govt. of India)**
 *Jan 2024 – Jun 2024*
-* **Social Sentinel:** Developed a real-time NLP system for detecting offensive content on social platforms.
+* **Social Sentinel:** Developed a real-time NLP system for monitoring and classifying offensive content on Telegram.
 * **Research:** Contributed to IEEE publications through applied experimentation with transformer-based classification.
+
+
+
+## 🏆 Honors & Achievements
+
+* **Best Paper Award (IEEE ICRITO 2025)** Received for the paper *"Real-Time Vigilance: Advanced Video Analysis for Identifying Violence in Public Spaces"*.
+* **Best Project Award (IIT Madras)** Awarded for excellence in the Modern Application Development course.
+* **Top 3 Rank Holder (MCA)** Secured top 3 position in the Master of Computer Applications program at Pondicherry University with a **CGPA of 9.35**.
+* **Swami Vivekananda Merit-cum-Means Scholarship** Awarded by the Government of West Bengal for consistent academic excellence (2015–2022).
 
 
 
 ## 🔬 Research & Publications
 
-**🏆 Best Paper Award | IEEE ICRITO 2025**
-**Real-Time Vigilance: Advanced Video Analysis for Violence Detection**
-* [DOI: 10.1109/ICRITO66076.2025.11241501](https://doi.org/10.1109/ICRITO66076.2025.11241501)
-* *Framework:* Deep CNNs + Temporal Modeling for public safety monitoring.
-
-**IEEE ICIMIA 2025**
-**Hybrid QLSTM Framework for Time-Series Forecasting**
-* [DOI: 10.1109/ICIMIA67127.2025.11200988](https://doi.org/10.1109/ICIMIA67127.2025.11200988)
-* *Innovation:* Quantum-inspired LSTM architecture for handling financial market volatility.
-
-**IEEE ICSTSDG 2024**
-**Multifaceted Feature Extraction for Mortality Risk Prediction**
-* [DOI: 10.1109/ICSTSDG61998.2024.11026232](https://doi.org/10.1109/ICSTSDG61998.2024.11026232)
-* *Application:* Pediatric ICU risk assessment using multi-source data fusion.
-
-
+<table>
+  <tr>
+    <th width="15%">Conference</th>
+    <th width="85%">Paper & Impact</th>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://img.shields.io/badge/IEEE-2025-00629B" />
+    </td>
+    <td>
+      <a href="https://doi.org/10.1109/ICRITO66076.2025.11241501"><b>Real-Time Vigilance: Advanced Video Analysis for Violence Detection</b></a><br/>
+      <i>🏆 Best Paper Award at ICRITO 2025</i><br/>
+      Built a real-time computer vision pipeline leveraging deep learning models for automated violence detection to support public safety monitoring systems.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://img.shields.io/badge/IEEE-2025-00629B" />
+    </td>
+    <td>
+      <a href="https://doi.org/10.1109/ICIMIA67127.2025.11200988"><b>Hybrid QLSTM Framework for Time-Series Forecasting</b></a><br/>
+      <i>Presented at ICIMIA 2025</i><br/>
+      Designed a hybrid Quantum-inspired LSTM architecture to improve forecasting accuracy under highly volatile financial market conditions.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://img.shields.io/badge/IEEE-2024-00629B" />
+    </td>
+    <td>
+      <a href="https://doi.org/10.1109/ICSTSDG61998.2024.11026232"><b>Multifaceted Feature Extraction for Mortality Risk Prediction</b></a><br/>
+      <i>Presented at ICSTSDG 2024</i><br/>
+      Developed an ML-driven clinical risk prediction framework using advanced feature engineering to improve mortality assessment in pediatric intensive care units.
+    </td>
+  </tr>
+</table>
 
 ## 💻 Key Projects
 
@@ -104,9 +151,21 @@ Currently, I drive data-driven strategies at **EXL Service** and previously led 
 
 ## 🎓 Education
 
-* **Master of Computer Applications (MCA)** | Pondicherry University | **CGPA: 9.35/10** (Top 3 Rank)
+* **Master of Computer Applications (MCA)** | Pondicherry University | **CGPA: 9.35/10**
 * **Diploma in Data Science** | IIT Madras | **CGPA: 8.8/10**
 * **B.Sc. Physics (Honours)** | Vidyasagar University | **CGPA: 9.08/10**
+
+
+
+## 📜 Certifications
+
+* **Google Digital Leader** | Coursera (2024)
+* **Artificial Intelligence for Economics** | IIT Kharagpur (NPTEL, 2025)
+* **Deep Learning for Computer Vision** | IIT Hyderabad (NPTEL)
+* **Data Science & ML using Python** | NIELIT
+* **IoT Software Analyst** | NIELIT
+* **Introduction to MongoDB** | MongoDB University
+* **Advanced Excel Training** | Udemy
 
 
 

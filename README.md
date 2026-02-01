@@ -10,7 +10,7 @@
 <a href="https://linkedin.com/in/shibkumarsaraf">
   <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
-<a href="mailto:shibkumarsaraf05@gmail.com">
+<a href="mailto:contact@shibkumar.dev">
   <img src="https://img.shields.io/badge/Email-Contact_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
 </a>
 <a href="https://orcid.org/0009-0005-2533-6066">

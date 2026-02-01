@@ -1,4 +1,8 @@
+title: Shib Kumar Saraf
+logo: https://github.com/shib1111111.png
+description: >-
+  Senior Business Analyst & AI Engineer specializing in Agentic Workflows,
+  RAG Architectures, and Computer Vision.
 theme: jekyll-theme-minimal
-title: Shib Kumar Saraf | AI Engineer & Generative AI Architect
-description: Portfolio of Shib Kumar Saraf. Senior Business Analyst and AI Engineer specializing in RAG, Agentic Workflows, Computer Vision, and Python development.
-url: "https://shibkumar.dev"
+google_analytics: # Add your UA-ID here if you have one
+show_downloads: true

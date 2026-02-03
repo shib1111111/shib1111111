@@ -395,6 +395,12 @@
             color: var(--primary-color);
             margin-bottom: 1rem;
         }
+        /* Fix for unclickable links */
+        .hero-section .container,
+        footer .container {
+            position: relative;
+            z-index: 2;
+        }
     </style>
 </head>
 <body>

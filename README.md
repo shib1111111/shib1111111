@@ -172,7 +172,4 @@ Currently, I drive data-driven strategies at **EXL Service** and previously led 
 <div align="center">
   <p><i>"Engineering Intelligence. Deploying Impact."</i></p>
   <p>© 2026 Shib Kumar Saraf</p>
-  
-  <img src="https://github-readme-stats.vercel.app/api?username=shib1111111&show_icons=true&hide_border=true&theme=minimal&bg_color=00000000" height="150" alt="stats graph"  />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=shib1111111&layout=compact&hide_border=true&theme=minimal&bg_color=00000000" height="150" alt="languages graph" />
 </div>
